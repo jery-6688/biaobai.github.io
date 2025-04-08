@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>给你的告白 | 张三</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Noto+Serif+SC:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="love-card animate__animated animate__fadeIn">
+            <div class="header">
+                <h1 class="animate__animated animate__heartBeat animate__delay-1s">给你的告白</h1>
+                <div class="heart-icon">❤</div>
+            </div>
+            
+            <div class="content">
+                <div class="message animate__animated animate__fadeInUp animate__delay-2s">
+                    <p>亲爱的，</p>
+                    <p>时光荏苒，岁月如梭，但我对你的心意从未改变。</p>
+                    <p>每一次与你相遇，都是我生命中最美好的瞬间。</p>
+                    <p>你的笑容如阳光般温暖，照亮了我的世界。</p>
+                    <p>今天，我鼓起勇气向你表白：</p>
+                    <p class="highlight">我喜欢你，想和你一起走过漫长的岁月。</p>
+                    <p>无论是平淡的日子，还是精彩的时刻，</p>
+                    <p>我都希望能与你分享，与你共度。</p>
+                </div>
+                
+                <div class="signature animate__animated animate__fadeInUp animate__delay-3s">
+                    <p>爱你的人</p>
+                    <p class="name">张三</p>
+                </div>
+            </div>
+            
+            <div class="actions">
+                <button id="accept-btn" class="btn accept animate__animated animate__pulse animate__infinite">接受告白</button>
+                <button id="maybe-btn" class="btn maybe">考虑一下</button>
+            </div>
+        </div>
+        
+        <div id="floating-hearts"></div>
+        
+        <div id="success-modal" class="modal">
+            <div class="modal-content animate__animated animate__zoomIn">
+                <h2>❤ 谢谢你接受我的心意 ❤</h2>
+                <p>这是我们故事的开始...</p>
+                <div class="fireworks"></div>
+                <button id="close-modal" class="btn">关闭</button>
+            </div>
+        </div>
+        
+        <div id="maybe-modal" class="modal">
+            <div class="modal-content animate__animated animate__zoomIn">
+                <h2>没关系，我会等你</h2>
+                <p>爱是等待，我愿意给你时间...</p>
+                <div class="floating-images">
+                    <img src="https://picsum.photos/100/100?random=1" alt="回忆" class="memory-img">
+                    <img src="https://picsum.photos/100/100?random=2" alt="回忆" class="memory-img">
+                    <img src="https://picsum.photos/100/100?random=3" alt="回忆" class="memory-img">
+                </div>
+                <button id="close-maybe-modal" class="btn">关闭</button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="music-control">
+        <button id="music-toggle">
+            <span class="music-on">🎵</span>
+            <span class="music-off">🔇</span>
+        </button>
+        <audio id="bg-music" loop>
+            <source src="https://music.163.com/song/media/outer/url?id=1824045033.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+    
+    <script src="./script.js"></script>
+</body>
+</html>
